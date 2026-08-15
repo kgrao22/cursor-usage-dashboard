@@ -1,0 +1,12 @@
+node_modules
+.git
+.env
+.env.local
+.env*.local
+data/
+probe-output/
+smoke-output.html
+*.png
+*.log
+README.md
+deploy/

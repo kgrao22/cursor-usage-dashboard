@@ -1,0 +1,21 @@
+{
+  "name": "cursor-spend-dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Self-hosted spend dashboard for Cursor teams — on-demand vs included-pool, billing-cycle aware.",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "ingest": "node scripts/ingest-cli.mjs",
+    "backfill": "node scripts/backfill.mjs",
+    "probe": "node scripts/probe3.mjs",
+    "test": "node scripts/smoke-test.mjs && node scripts/store-test.mjs"
+  },
+  "dependencies": {
+    "@google-cloud/bigquery": "^7.9.1"
+  }
+}

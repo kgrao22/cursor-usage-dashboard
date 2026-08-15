@@ -1,0 +1,69 @@
+# --- Dependencies ---
+node_modules/
+.pnp
+.pnp.js
+.yarn/install-state.gz
+
+# --- Environment variables / secrets ---
+# Never commit anything that could contain API keys or credentials.
+.env
+.env.local
+.env.development
+.env.development.local
+.env.test
+.env.test.local
+.env.production
+.env.production.local
+.env*.local
+*.pem
+*.key
+secrets.json
+service-account*.json
+gcp-key*.json
+
+# --- Probe / raw API output (contains team member emails and spend) ---
+probe-output/
+
+# --- Next.js ---
+.next/
+out/
+next-env.d.ts
+
+# --- Build output ---
+build/
+dist/
+
+# --- Testing / coverage ---
+coverage/
+.nyc_output/
+
+# --- TypeScript ---
+*.tsbuildinfo
+
+# --- Logs ---
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+logs/
+*.log
+
+# --- Vercel ---
+.vercel
+
+# --- Editor / OS ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.swp
+
+# --- Misc ---
+*.local
+
+# Generated test output
+smoke-output.html
+
+# Generated test output
+smoke-output.html
